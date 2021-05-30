@@ -67,7 +67,7 @@ services:
   web_server:
     build:
       context: ./nginx
-    restart: always
+    restart: unless-stopped
     ports:
       - 80:80
     volumes:
